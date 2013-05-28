@@ -1,0 +1,250 @@
+% aggiunto riga sotto per risolvere problema di visualizzazione su Acrobat Reader sun W7
+% http://tex.stackexchange.com/questions/64448/how-to-overcome-acrobat-reader-error-131-with-a-pdflatex-doc
+\pdfminorversion=4
+\documentclass[a4paper,11pt]{article}
+
+%Non modificare
+\def\TITLE		{\mbox{\GRUPPO}} 
+\def\SUBTITLE	{\SIGLA, \PROGETTO} 
+%*****nuovi comandi************************
+%fornisce il caption per riferirsi ad una particolare sezione
+\newcommand{\numref}[1]{\textsf{\textsl{``\nameref{#1}'' (\ref{#1})}}}
+%**IMPORTAZIONE PACKAGE**************************
+\usepackage{ifthen}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xspace}
+\usepackage{float}
+\usepackage{chapterbib}
+\usepackage{graphicx, subfigure}
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm,bindingoffset=5mm]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue, citecolor=black, linkcolor=black, hyperindex, breaklinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{totpages}
+\usepackage{tabularx, array}
+\usepackage{dcolumn}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{calc}
+\usepackage{eurosym}
+\usepackage{datatool}
+\usepackage[bottom]{footmisc}
+\usepackage{listings} % used to report code
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[nonumberlist,acronym,toc]{glossaries}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{wallpaper}
+\usepackage{grffile}
+\usepackage{soul}
+\usepackage{floatflt}
+\usepackage{pgf}
+
+%scalegraphics
+\makeatletter
+\def\ScaleIfNeeded{%
+\ifdim\Gin@nat@width>\textwidth
+  \textwidth
+\else
+  200px
+\fi
+}
+\makeatother
+\def\scalegraphics#1{
+  \includegraphics[width=\ScaleIfNeeded]{#1}
+}
+
+%glossary
+\newglossarystyle{altlistgroupmod}{
+\glossarystyle{altlistgroup}
+\renewcommand{\glsgroupskip}{} 
+}
+\glossarystyle{altlistgroupmod}
+
+% Listings
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{dkred}{rgb}{0.6,0,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{light-gray}{gray}{0.95}
+
+\lstset{
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+%soul color
+\sethlcolor{light-gray}
+
+%Tikz tree
+\makeatletter
+\newcount\dirtree@lvl
+\newcount\dirtree@plvl
+\newcount\dirtree@clvl
+\def\dirtree@growth{%
+  \ifnum\tikznumberofcurrentchild=1\relax
+  \global\advance\dirtree@plvl by 1
+  \expandafter\xdef\csname dirtree@p@\the\dirtree@plvl\endcsname{\the\dirtree@lvl}
+  \fi
+  \global\advance\dirtree@lvl by 1\relax
+  \dirtree@clvl=\dirtree@lvl
+  \advance\dirtree@clvl by -\csname dirtree@p@\the\dirtree@plvl\endcsname
+  \pgf@xa=1cm\relax
+  \pgf@ya=-0.5cm\relax
+  \pgf@ya=\dirtree@clvl\pgf@ya
+  \pgftransformshift{\pgfqpoint{\the\pgf@xa}{\the\pgf@ya}}%
+  \ifnum\tikznumberofcurrentchild=\tikznumberofchildren
+  \global\advance\dirtree@plvl by -1
+  \fi
+}
+
+\tikzset{
+  dirtree/.style={
+    growth function=\dirtree@growth,
+    every node/.style={anchor=north},
+    every child node/.style={anchor=west},
+    edge from parent path={(\tikzparentnode\tikzparentanchor) |- (\tikzchildnode\tikzchildanchor)}
+  }
+}
+\makeatother
+
+% Glossaries
+\makeglossaries
+\renewcommand*{\glspostdescription}{}
+\renewcommand*{\glssymbolsgroupname}{Simboli}%
+
+
+% Aumento profondità subsections
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%**STILE PAGINA**********************************
+
+\pagestyle{fancy}
+
+\fancypagestyle{firststyle}
+{
+    \fancyhf{}
+    \fancyhead[CE,CO]{\includegraphics[clip=true, height=2cm] {../template/img/logo_title.png}}
+}
+
+%no indentazione paragrafo
+\setlength{\parindent}{0pt}
+
+\setlength{\headheight}{25pt}
+
+%intestazione
+
+%\lhead{\includegraphics[height=20px]{\LOGO}}
+%\lhead{\Large{\GRUPPO} \\ \footnotesize{\PROGETTO}}
+\lhead{}
+\rhead{\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0pt}  %Linea sotto l'intestazione
+
+%piè di pagina
+\lfoot{\footnotesize{{\DOCUMENTO}  {\VERSIONE}}}
+\rfoot{\thepage} %per le prime pagine: mostra solo il numero romano
+\cfoot{}
+\renewcommand{\footrulewidth}{0pt}   %Linea sopra il piè di pagina
+
+
+%**PRIMA PAGINA***************************
+
+\begin{document}
+%Prima pagina senza intestazione né piè di pagina									
+\thispagestyle{firststyle}
+%
+%Centra il testo
+\begin{center}
+%\vspace{1cm}
+%
+%Titolo e sottotitolo
+%\Huge{\textbf{\TITLE}} \\\Large{\textbf{\SUBTITLE}}
+%
+%Linea sotto il nome del capitolato
+\rule{\textwidth}{0.2mm}	
+ 
+%Spazio verticale
+\vspace{2cm}
+
+%Inserimento logo
+%\includegraphics[trim=0.5cm 3cm 0.5cm 3cm, clip=true, width=0.8\textwidth] {\LOGO}
+\includegraphics[clip=true, height=7cm] {\LOGO}
+
+%Spazio verticale
+
+\vspace{0.7cm}
+
+\Huge{\textbf{\DOCUMENTO}}
+
+\vspace{0.7cm}
+%Tabella con informazioni documento. Le seguenti variabili devono essere definite
+%nel file .tex che include questa struttura
+\normalsize{
+	\begin{tabular}{r|l}
+		\multicolumn{2}{c} {\textbf{Informazioni sul documento}} \\
+		\midrule
+		\textbf{Versione} 				& \VERSIONE \\
+		\textbf{Redazione} 				& \REDATTORI \\
+		\textbf{Verifica} 				& \VERIFICATORI \\
+		\textbf{Responsabile} 			& \RESPONSABILE \\
+		\textbf{Uso}		 			& \USO \\
+		\textbf{Lista di distribuzione}	& \DISTRIBUZIONE \\
+	\end{tabular}
+} \\
+
+\vspace{0.5cm}
+%Descrizione del documento
+ \textbf{Descrizione} \\
+\DESCRIZIONE
+
+%Fine zona centrata
+\end{center}
+
+%Indica che è finita la pagina corrente ed inizia la prossima
+\newpage
+\ULCornerWallPaper{1}{\INTESTAZIONE}
+\LLCornerWallPaper{1}{\PIEDIPAGINA}
+\thispagestyle{empty}
+%{\Large{\textbf{Diario delle modifiche}}}
+%
+%\begin{longtable}{|>{\centering}m{5cm}| >{\centering}m{3cm}|c|c|c|}
+%	\hline
+%	\multicolumn{1}{|c|}{\textbf{Descrizione modifica}} &
+%	\multicolumn{1}{c|}{\textbf{Autore}} &
+%	\multicolumn{1}{c|}{\textbf{Ruolo}} &
+%	\multicolumn{1}{c|}{\textbf{Data}} &
+%	\multicolumn{1}{c|}{\textbf{Versione}}\\ 
+%		\hline \MODIFICHE \hline
+%\end{longtable}
+
+\newpage
+
+%si usa la numerazione romana per gli indici e la tabella delle modifiche
+\pagenumbering{Roman}
+%************************************************

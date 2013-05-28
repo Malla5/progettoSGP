@@ -1,0 +1,61 @@
+%importa variabili utili
+\input{../template/config}
+
+\def\DOCUMENTO 		{Piano di Progetto\\}
+\def\VERSIONE 		{1.0.0\\}
+
+\def\REDATTORI		{}
+
+\def\VERIFICATORI	{}
+
+\def\RESPONSABILE	{}
+
+\def\USO			{}
+
+\def\DISTRIBUZIONE	{\GRUPPO{}\\
+					& \COMMITTENTE{}\\}
+
+\def\DESCRIZIONE	{}
+
+\def\INDICE		{true} 		%abilita - disabilita l'indice
+\def\TABELLE	{true} 		%abilita - disabilita l'indice delle tabelle
+\def\FIGURE		{true} 		%abilita - disabilita l'indice delle figure
+
+%importa la struttura
+\input{../template/structure}
+%importa gli indici
+\input{../template/index}
+
+\section{Introduzione}
+\input{sections/introduzione}
+\newpage
+
+\section{Presentazione del contesto}
+\input{sections/contesto}
+\newpage
+
+\section{Descrizione generale e casi d'uso}
+\input{sections/descrizione}
+\newpage
+
+\section{Analisi di fattibilità}
+\input{sections/fattibilita}
+\newpage
+
+\section{Pianificazione}
+\input{sections/pianificazione}
+\newpage
+
+\section{Aspetto economico-finanziario}
+\input{sections/economico}
+\newpage
+
+\section{Gestione dei rischi}
+\input{sections/rischi}
+\newpage
+
+\section{Elementi di progettazione}
+\input{sections/progettazione}
+
+
+\end{document}

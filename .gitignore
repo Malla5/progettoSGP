@@ -1,0 +1,25 @@
+#contiene le estensioni dei file da ignorare per il versionamento
+
+#file binari non versionabili
+*.pdf
+
+#file residui della compilazione
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.glo
+*.ist
+*.acn
+*.fdb_latexmk
+
+#file temporanei da escludere
+*~
+*.*.backup
+*.backup
+
+#file creati dal sistema operativo
+.directory
