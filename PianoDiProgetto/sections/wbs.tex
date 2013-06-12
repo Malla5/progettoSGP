@@ -1,0 +1,517 @@
+La Work BreakDown Structure, d'ora in poi WBS, rappresenta l'insieme delle attività necessarie a svolgere un compito ben preciso o un processo. Le singole attività prendono il nome di Work Package, WP, e definiscono dettagliatamente le azioni da svolgere per
+ciascuna di esse.\\
+La WBS è costituita da una struttura ad albero di WP che, a partire dell'obiettivo finale del progetto, specifica per suddivisioni successive i singoli sotto-obiettivi, fino all'unità minima di attività.\\
+Tale scomposizione in tanti compiti di dimensioni limitate facilita la gestione, il controllo e l'assegnazione delle singole attività, consentendo una migliore suddivisione del lavoro.\\
+Grazie alla WBS il project manager può, in maniera semplificata, organizzare tutte le attività che compongono il progetto, così come i WP, ed avere sempre a disposizione un utile strumento che definisce tutti i passi necessari alla buona realizzazione del progetto.\\
+La WBS, inoltre, risulta essere la base per tutte le altre attività di pianificazione richieste per la realizzazione di un progetto di successo.
+
+\subsubsection{WBS-Primo Livello}
+\paragraph{Definizione Concept}
+È la prima fase del progetto, dove si raccolgono le idee per portare alla nascita e alla definizione del progetto.\\
+A partire da questo momento in poi si penserà alla forma che assumerà il prodotto finale, alla  definizione delle caratteristiche più importanti( target del prodotto, come si intende erogare il servizio) e alla definizione delle funzionalità principali che il prodotto finale deve avere.
+
+\paragraph{Studio Fattibilità}
+È la fase successiva a quella di Definizione Concept, ha lo scopo di capire se quello che si vuole realizzare è innanzitutto fattibile e possa portare ad avere dei guadagni concreti.\\
+Dunque il concept viene valutato sotto tutti i punti di vista e di interesse per l'organizzazione, al fine di avere un insieme di conclusioni e indicazioni sulle possibilità di buona riuscita del lavoro.
+
+\paragraph{Analisi e Progettazione}
+A questo punto gli obiettivi del progetto sono chiari, bisogna dunque formalizzarli e chiarirli in maniera non ambigua.\\
+Vengono illustrate dettagliatamente le funzionalità, i servizi e le prestazioni che dovranno essere offerte dal prodotto finito.\\
+Infine viene progettato come il prodotto soddisferà i requisiti definiti in precedenza, definendone la struttura ed architettura da assumere e rispettare.
+
+\paragraph{Sviluppo}
+In questa fase si passa alla creazione vera e propria del prodotto software mediante la codifica di quanto definito durante la progettazione.\\
+Affinché questo risulti possibile è essenziale che ogni membro si attenga strettamente a quanto descritto nei documenti che gli vengono forniti.\\
+Non deve, assolutamente, inserire della creatività personale, in quanto il suo compito consiste nella traduzione in codice di quanto deciso precedentemente.\\
+Il codice prodotto dovrà essere costantemente verificato, per avere la sicurezza e la certezza che rispetti i requisiti di qualità definiti nella fase di pianificazione, accompagnato dall'appropriata manualistica.
+
+\paragraph{Test}
+Arrivati a questo punto vengono dunque effettuati i test delle componenti prodotte, verificando come si relazionano tra di loro, a partire dalle componenti di base del prodotto per arrivare a testare, alla fine, il sistema completo.\\
+Inoltre viene verificato che quanto è stato prodotto sia conforme agli obiettivi e ai requisiti che si erano definiti in precedenza.
+
+\paragraph{Pubblicazione}
+Una volta che il software prodotto è terminato e rispetta gli obiettivi ed i requisiti, viene ideato un piano per il rilascio.\\ Viene definito come la società intende promuovere il proprio prodotto e la ricerca di eventuali partnership.
+
+\subsubsection {WBS-Secondo livello}
+Per la descrizione dei Work Package di secondo livello verrà utilizzato il seguente schema in quanto, fatta eccezione per il WP %TODO manca numero work package
+, rappresentano tutti insiemi di attività elementari da realizzare:
+\begin{description}
+\item[Descrizione:] descrizione generica su ciò che il WP si propone di fare.
+\item[Responsabile:] persona che ha la responsabilità delle attività da svolgere nel WP e dell'output finale.
+\item[Input:] Ciò di cui necessita in ingresso il WP per iniziare a svolgere le sue attività. Solitamente questi input vengono forniti in uscita da altri WP e possono essere prototipi, documenti o risorse.
+\item[Output:] ciò che il WP deve produrre in uscita. I tipi di uscita possono essere diversi, a seconda delle attività svolte.
+\item[Attività:] lista delle attività elementari necessarie al completamento del WP. Per poter essere considerato concluso un WP devono essere concluse tutte le sue attività.
+\item[Costo:] costo in euro riassuntivo di tutte le spese necessarie al compimento del WP. Andranno considerate le spese relative al consumo di tutte le risorse utilizzate.
+\item[Tempi di realizzazione:] tempo necessario stimato per la buona riuscita e per il completamento del WP, espresso in giorni lavorativi.
+\end{description}
+
+\paragraph{Specifiche di massima}
+\begin{description}
+\item[Descrizione:] Definizione delle prime specifiche del prodotto per individuare i requisiti ad alto livello necessari a sviluppare l'abstract.
+\item[Responsabile:]
+\item[Input:] idee, critiche e specifiche provenienti da un brainstorming di gruppo.
+\item[Output:] documento formale che descrive una prima versione della specifica del prodotto, nella quale si definisce dettagliatamente l'idea che si vuole realizzare.
+\item[Attività:]
+\begin{itemize}
+\item ricerca nel web di eventuali competitors per ricavare da progetti già esistenti quali funzionalità è bene riproporre, quali no e quali sono quelle innovative che bisogna sviluppare;
+\item brainstorming tra le risorse umane assegnate al WP per identificare caratteristiche da implementare nel prodotto;
+\item prima stesura documento;
+\item verifica documento ed eventuali correzioni;
+\item formalizzazione documento;
+\item approvazione;
+\end{itemize}
+\item[Costo:] \euro{}.
+\item[Tempi di realizzazione:] giorni lavorativi.
+\end{description}
+
+\paragraph{Definizione delle funzionalità d'uso}
+\begin{description}
+\item[Descrizione:] definizione dettagliata delle più importanti funzionalità che si vuole siano presenti all'interno del software.
+\item[Responsabile:]
+\item[Input:] documento di specifiche di massima prodotto dal WP.
+\item[Output:] documento che descrive nel dettaglio le funzionalità base che si è deciso di sviluppare.
+\item[Attività:]
+\begin{itemize}
+\item studio del documento prodotto dal WP;
+\item analisi tecnica di sistemi simili già esistenti;
+\item prima stesura del documento;
+\item verifica del documento ed eventuali correzioni;
+\item formalizzazione del documento;
+\item approvazione.
+\end{itemize}
+\item[Costo:]  \euro{}.
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+
+\paragraph{Analisi delle nuove tecnologie}
+\item[Descrizione:] ricerca mirata di eventuali innovazioni tecnologie presenti nel mercato che possano risultare utili allo sviluppo del software.
+\item[Responsabile:]
+\item[Input:] documento di specifiche di funzionalità prodotto dal WP.
+\item[Output:] documento che descrive nel dettaglio eventuali nuove tecnologie interessanti che potrebbero essere inserite nel progetto. Per ciascuna di queste viene riportata una stima di tempo che si presuppone sia necessario ai programmatori per arrivare ad averne una buona padronanza.
+\item[Attività:]
+\begin{itemize}
+\item studio del documento prodotto dal WP;
+\item analisi mirata di eventuali nuove tecnologie e stima delle ore per l'apprendimento;
+\item prima stesura documento;
+\item verifica documento ed eventuali correzioni;
+\item formalizzazione documento;
+\item approvazione.
+\end{itemize}
+\item[Costo:] \euro{}.
+\item[Tempi di realizzazione:]  giorni lavorativi.
+
+\paragraph{Fattibilità tecnica}
+\begin{description}
+\item[Descrizione:] fase di valutazione del prodotto che si vuole realizzare dal punto di vista tecnico-tecnologico.
+\item[Responsabile:] 
+\item[Input:] tutti i documenti prodotti dal secondo livello del WP.
+\item[Output:] documento che descrive nel dettaglio, in modo non ambiguo, la fattibilità tecnica per il prodotto che si vuole realizzare indicando le tecnologie e gli strumenti necessari per farlo.
+\item[Attività:]
+\begin{itemize}
+\item studio dei documenti prodotti dai WP;
+\item incontro fra responsabili i tecnici;
+\item valutazione dei sistemi e degli standard in uso;
+\item valutazione delle tecnologie;
+\item prima stesura documento riassuntivo;
+\item verifica documento ed eventuali correzioni;
+\item formalizzazione documento;
+\item approvazione;
+\end{itemize}
+\item[Costo:] \euro{}.
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+
+\paragraph{Fattibilità marketing}
+\begin{description}
+\item[Descrizione:] fase di analisi del mercato per studiare la concorrenza dovuta ad idee similari. Seguono quindi una stima ed una analisi della redditività del prodotto e alle indicazioni preliminari su come pubblicizzarlo e rilasciarlo al fine di ottenere maggiori introiti dalla vendita.
+\item[Responsabile:] 
+\item[Input:] ricerche di mercato e dati riguardanti eventuali competitor.
+\item[Output:] documento formale che indica la fattibilità dal punto di vista del marketing. Nel caso di una buona riuscita sono riportate anche le azioni da seguire per il rilascio del prodotto.
+\item[Attività:]
+\begin{itemize}
+\item analisi di mercato;
+\item interviste, sondaggi e dialoghi con possibili clienti;
+\item individuazione di eventuali strategie;
+\item prima stesura documento riassuntivo;
+\item verifica documento ed eventuali correzioni;
+\item formalizzazione documento;
+\item approvazione;
+\end{itemize}
+\item[Costo:] \euro{}
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+%TODO
+\paragraph{Fattibilità Legale}
+
+\item[Descrizione:] fase di analisi del prodotto software sotto l'aspetto legale. Si studiano e
+si definiscono le strategie eventuali da adottare in difesa del progetto. Si verifica inoltre
+la possibilità di brevettare il prodotto e di registrare un marchio. Infine si verifica che
+lo sviluppo non porti alla violazione di alcuna legge o normativa in vigore\\
+
+\item[Responsabile:] \\
+
+\item[Input:] conoscenza di eventuali prodotti simili nel mercato e normative/vincoli legali\\
+
+\item[Output:] documento formale che indica la fattibilità dal punto di vista legale. Se viene
+prevista una buona riuscita allora sono riportate anche le azioni da seguire per il corretto
+rilascio del prodotto\\
+
+\item[Attività:]
+\begin{itemize}
+\item definizione di un marchio
+\item consulenza esterna legale
+\item prima stesura documento riassuntivo
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Fattibilità Economica}
+
+\item[Descrizione:] fase di analisi del prodotto software sotto l'aspetto economico. Si studia
+e si valutano i benefici economici che tale progetto potrebbe portare. Vengono stimati
+inoltre i costi che l'organizzazione dovrebbe sostenere, diretti ed indiretti. Inoltre viene
+studiata la possibilità di ottenere dei finanziamenti esterni \\
+
+\item[Responsabile:] \\
+
+\item[Input:] conoscenza dei costi diretti ed indiretti delle varie risorse \\
+
+\item[Output:] documento formale che indica la fattibilità dal punto di vista economico.
+All'interno di questo verrà illustrata la previsione economica del prodotto, illustrando i
+possibili guadagni ed indicando l'eventuale punto di pareggio.\\
+
+\item[Attività:]
+\begin{itemize}
+\item consulenze economiche
+\item stima dei costi, guadagni e gestione
+\item ricerca di eventuali finanziatori
+\item prima stesura documento riassuntivo
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Analisi dei rischi}
+
+\item[Descrizione:] fase di analisi dei rischi riguardanti lo sviluppo del prodotto software. Si
+studia e si definiscono quali sono i rischi in cui si può incombere durante tutte la fasi di
+sviluppo, così da poterli evitare o quantomeno gestire\\
+
+\item[Responsabile:] \\
+
+\item[Input:] esperienze personali, conoscenze di rischi noti e documenti prodotti all’interno
+del WP\\
+
+\item[Output:] documento formale che indica gli eventuali rischi che si possono verificare
+durante le varie fasi di sviluppo del progetto\\
+
+\item[Attività:]
+\begin{itemize}
+\item identificazione dei rischi noti
+\item identificazione rischi dovuti alla tipologia del progetto
+\item ricerca di soluzioni
+\item prima stesura documento riassuntivo
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+\paragraph{Definizione dei casi d'uso}
+\item[Descrizione:]fase di definizione finale delle funzionalità del prodotto. Si determina
+in modo non ambiguo quali saranno le caratteristiche del software e come gli utenti
+potranno interagire con esso. Successivamente si effettua un’analisi dei rischi sul piano dello sviluppo
+del software, si studia e si definiscono quali sono i rischi nei quali si
+può incombere durante tutte la fasi di sviluppo, così da poterli evitare o quantomenogestire\\
+
+\item[Responsabile:] \\
+
+\item[Input: ]documentazione prodotta nei WP precedenti ed esperienza personale degli
+analisti\\
+
+\item[Output:] documento formale che illustra chiaramente ed in modo formale le funzionalità
+definitive del prodotto finale e come sarà possibile per gli utenti interagire con esso\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio dei documenti in input
+\item riunione fra gli analisti
+\item ricerca di soluzioni a problemi emersi durante l’incontro
+\item prima stesura documento riassuntivo
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+
+\paragraph{Definizione dei requisiti}
+
+\item[Descrizione:] fase non elementare, composta da altri WP di livello inferiore, allo scopo di definire i requisiti che il prodotto deve possedere e soddisfare\\
+
+\item[Responsabile:] \\
+
+\item[Input:] documentazione prodotta nei WP precedenti ed esperienza personale degli
+analisti\\
+
+\item[Output:] documento formale ad uso esterno Analisi dei Requisiti\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio dei documenti in input
+\item riunione fra analisti
+\item prima stesura documento riassuntivo
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Pianificazione qualità del prodotto}
+
+\item[Descrizione:] fase di identificazione e definizione degli standard da seguire allo scopo di garan-
+tire qualità al prodotto. Identificazione delle strategie di controllo da utilizzare per
+aggiungere qualità al prodotto\\
+
+\item[Responsabile:]  \\
+
+\item[Input:] politiche e standard di qualità, esperienze passate degli analisti
+\item[Output:] documenti formali, Piano di Qualifica e Norme di Progetto, che illustrano gli
+standard e le strategie da seguire per aggiungere qualità al prodotto\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio degli standard esistenti
+\item definizione degli obiettivi di qualità
+\item pianificazione adattamento standard al progetto
+\item definizione delle strategie di verifica e validazione del software
+\item definizione delle norme di progetto
+\item prima stesura documenti riassuntivi
+\item verifica documenti ed eventuali correzioni
+\item formalizzazione documenti
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Realizzazione e definizione del database}
+\item[Descrizione:] fase di sviluppo e codifica del database secondo quanto definito nella fase
+di progettazione\\
+
+\item[Responsabile:] \\
+
+\item[Input:] Analisi Requisiti, Specifica Tecnica, Definizione di Prodotto, Norme di Progetto,
+Piano di Qualifica ed altra documentazione tecnica\\
+
+\item[Output:]database realizzato e pienamente funzionante
+\item[Attività:]
+\begin{itemize}
+\item studio dei documenti in input
+\item fase di codifica
+\item verifica del codice e delle funzionalità del database
+\item verifica della qualità
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+
+\paragraph{Realizzazione interfaccia applicazione}
+\item[Descrizione:] fase di sviluppo e codifica dell'interfaccia previste per il software, se-
+condo quanto definito nelle fasi di analisi e progettazione \\
+
+\item[Responsabile:] \\
+
+\item[Input:] Analisi Requisiti, Specifica Tecnica, Definizione di Prodotto, Norme di Proget-
+to, Piano di Qualifica ed altra documentazione tecnica \\
+
+\item[Output:] interfaccia realizzata e pienamente funzionante\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio dei documenti in input
+\item fase di codifica
+\item verifica del codice
+\item verifica della qualità
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Manuali Utente}
+\item[Descrizione:] realizzazione dei manuali utente per il supporto all’utente all'uso dell'interfaccia web. Il manuale illustra le funzionalità del prodotto, il suo utilizzo e l’esposizione con possibili soluzioni di problemi \\
+
+\item[Responsabile:] \\
+
+\item[Input:] interfaccia prodotto \\
+
+\item[Output:] documento con lo scopo di fornire un supporto agli utenti dopo il rilascio\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio delle funzionalità del software
+\item prima realizzazione manuale
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Realizzazione documentazione database}
+\item[Descrizione:] stesura formale della documentazione riguardante tutto il codice prodotto
+per la realizzazione del database \\
+
+\item[Responsabile:] \\
+
+\item[Input:] Specifica Tecnica, Definizione di Prodotto e codice software del database \\
+
+\item[Output:] documento con scopo documentale della codifica del software \\
+
+\item[Attività:]
+\begin{itemize}
+\item studio documenti in input e del codice prodotto
+\item stesura documentazione per ogni singola unità
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Documentazione interfaccia web}
+\item[Descrizione:] stesura formale della documentazione riguardante tutto il codice prodotto
+per la realizzazione del interfaccia \\
+
+\item[Responsabile:] \\
+
+\item[Input:] Specifica Tecnica, Definizione di Prodotto e codice software del interfaccia web\\
+
+\item[Output:] documento con scopo documentale della codifica del software\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio documenti in input e del codice prodotto
+\item stesura documentazione per ogni singola unità
+\item verifica documento ed eventuali correzioni
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Test unità}
+
+\item[Descrizione:] fase di test di tutte le singole unità software prodotte \\
+
+\item[Responsabile:] \\
+
+\item[Input:] interfaccia web e Piano di Qualifica\\
+
+\item[Output:] documento riassuntivo dei risultati ottenuti dai test\\
+
+\item[Attività:]
+\begin{itemize}
+\item studio documento in input
+\item esecuzione dei test
+\item risoluzione eventuali errori rilevati
+\item approvazione dei test
+\item stesura documento riassuntivo
+\item verifica documento
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+\paragraph{Test intero sistema}
+\item[Descrizione:] fase di test sulle interazioni fra le singole unità. Si verifica che i comportamenti in seguito alle comunicazioni fra di queste siano quelli previsti \\
+
+\item[Responsabile:] \\
+
+\item[Input:] interfaccia web e Piano di Qualifica, documento riassuntivo test di unità \\
+
+\item[Output:] documento riassuntivo dei risultati ottenuti dai test di integrazione \\
+
+\item[Attività:]
+\begin{itemize}
+\item studio documento Piano di Qualifica e accertamento risultati test di unità
+\item esecuzione dei test
+\item risoluzione eventuali errori rilevati
+\item approvazione dei test
+\item stesura documento riassuntivo
+\item verifica documento
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+
+
+
+\paragraph{Collaudo}
+
+\item[Descrizione:] fase di test dell’intero sistema da effettuare prima del rilascio. Si cercano
+eventuali errori o malfunzionamenti e successivamente si certifica che tutte le funzionalità dichiarate siano presenti \\
+
+\item[Responsabile:] \\
+
+\item[Input:] interfaccia web, esito dei vari test, Piano di Qualifica e Analisi Dei Requisiti \\
+
+\item[Output:] documento riassuntivo dei risultati ottenuti dai test e dal controllo dei requisiti \\
+
+\item[Attività:]
+\begin{itemize}
+\item studio documenti in input
+\item esecuzione di test di sistema previo utilizzo
+\item risoluzione eventuali errori rilevati
+\item approvazione dei test
+\item controllo dei requisiti soddisfatti
+\item stesura documento riassuntivo
+\item verifica documento
+\item formalizzazione documento
+\item approvazione
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
+
+
+ \paragraph{Promozione del Prodotto}
+\item[Descrizione:] fase di promozione del prodotto realizzato. Si punta a pubblicizzare il
+prodotto con lo scopo di raggiungere quanti più clienti possibili iniziando a creare un brand \\
+
+\item[Responsabile:] \\
+
+\item[Input:] alcune conoscenze di marketing e target clienti \\
+
+\item[Output:] slogan, pubblicità scelte di mercato da intraprendere \\
+
+\item[Attività:]
+\begin{itemize}
+\item ricerca possibili clienti
+\item pubblicità rivolta alla categorie di clienti scelti
+\end{itemize}
+\item[Costo:] \euro \\
+\item[Tempi di realizzazione:]  giorni lavorativi
