@@ -183,6 +183,29 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
+\paragraph{Pianificazione qualità del prodotto}
+\begin{description}
+\item[Descrizione:] fase di identificazione e definizione degli standard da seguire allo scopo di garantire qualità al prodotto. Identificazione delle strategie di controllo da utilizzare per aggiungere qualità al prodotto.
+\item[Responsabile:] 
+\item[Input:] politiche e standard di qualità, esperienze passate degli analisti.
+\item[Output:] documenti formali, Piano di Qualifica e Norme di Progetto, che illustrano gli standard e le strategie da seguire per aggiungere qualità al prodotto.
+\item[Attività:]
+\begin{itemize}
+\item studio degli standard esistenti;
+\item definizione degli obiettivi di qualità;
+\item pianificazione adattamento standard al progetto;
+\item definizione delle strategie di verifica e validazione del software;
+\item definizione delle norme di progetto;
+\item prima stesura documenti riassuntivi;
+\item verifica documenti ed eventuali correzioni;
+\item formalizzazione documenti;
+\item approvazione;
+\end{itemize}
+\item[Costo:] \euro{}
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+
+
 \paragraph{Analisi dei rischi}
 \begin{description}
 \item[Descrizione:] fase di analisi dei rischi riguardanti lo sviluppo del prodotto software. Si studia e si definiscono quali sono i rischi in cui si può incombere durante tutte la fasi di sviluppo, così da poterli evitare o quantomeno gestire.
@@ -242,29 +265,47 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Pianificazione qualità del prodotto}
+\paragraph{Progettazione di alto livello}
 \begin{description}
-\item[Descrizione:] fase di identificazione e definizione degli standard da seguire allo scopo di garantire qualità al prodotto. Identificazione delle strategie di controllo da utilizzare per aggiungere qualità al prodotto.
+\item[Descrizione:] fase in cui si procede con la definizione dell'architettura del prodotto utilizzando componenti con
+specifica chiara, coesa e nei principi di qualità fissati a priori.
 \item[Responsabile:] 
-\item[Input:] politiche e standard di qualità, esperienze passate degli analisti.
-\item[Output:] documenti formali, Piano di Qualifica e Norme di Progetto, che illustrano gli standard e le strategie da seguire per aggiungere qualità al prodotto.
+\item[Input:] analisi dei requisiti, sistemi aziendali ed eventualmente componenti esistenti.
+\item[Output:] documento di specifica tecnica del prodotto che riassume l'architettura generale ed ad
+alto livello del software.
 \item[Attività:]
 \begin{itemize}
-\item studio degli standard esistenti;
-\item definizione degli obiettivi di qualità;
-\item pianificazione adattamento standard al progetto;
-\item definizione delle strategie di verifica e validazione del software;
-\item definizione delle norme di progetto;
-\item prima stesura documenti riassuntivi;
-\item verifica documenti ed eventuali correzioni;
-\item formalizzazione documenti;
-\item approvazione;
+\item incontri tra progettisti e analisti;
+\item analisi di componenti e sistemi esistenti;
+\item valutazione di essi per opportunità di riuso;
+\item identificazione componenti fondamentali;
+\item individuare le tecnologie e le tecniche da utilizzare;
+\item prima bozza di documenti e schemi, revisione, approvazione, formalizzazione finale.
 \end{itemize}
-\item[Costo:] \euro{}
+\item[Costo:] \euro{}.
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Realizzazione e definizione del database}
+\paragraph{Progettazione di dettaglio}
+\begin{description}
+\item[Descrizione:] fase in cui si procede con la definizionedelle unità realizzative cioè moduli la cui complessità deve essere ridotta al minimo indispensabile al fine di permettere la realizzazione del modulo al singolo programmatore.
+\item[Responsabile:] 
+\item[Input:] analisi dei requisiti, specifica tecnica.
+\item[Output:] documento di definizione del prodotto che descriva con linguaggio UML2.0 schemi e diagrammi di tutte le unità che devono essere realizzate.
+\item[Attività:]
+\begin{itemize}
+\item definizione e specifica dei moduli da realizzare
+\item raggruppare moduli in unità mantenendo basso accoppiamento e elevata coesione
+\item assegnare le unità ai componenti
+\item tracciamento componenti- requisiti
+\item stabilire i test di unità
+\item prima stesura del documento, revisione, approvazione, formalizzazione finale.
+\end{itemize}
+\item[Costo:] \euro{}.
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+
+\paragraph{Definizione e realizzazione del database}
 \begin{description}
 \item[Descrizione:] fase di sviluppo e codifica del database secondo quanto definito nella fase di progettazione.
 \item[Responsabile:] 
@@ -282,12 +323,12 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Realizzazione interfaccia applicazione}
+\paragraph{Realizzazione componenti}
 \begin{description}
-\item[Descrizione:] fase di sviluppo e codifica dell'interfaccia previste per il software, secondo quanto definito nelle fasi di analisi e progettazione.
+\item[Descrizione:] fase di sviluppo e codifica delle componenti previste nella fase di progettazione comprensive sia dell'interfaccia grafica del prodotto, sia delle logica dell'applicativo.
 \item[Responsabile:] 
 \item[Input:] Analisi Requisiti, Specifica Tecnica, Definizione di Prodotto, Norme di Progetto, Piano di Qualifica ed altra documentazione tecnica.
-\item[Output:] interfaccia realizzata e pienamente funzionante.
+\item[Output:] codice dell'applicativo.
 \item[Attività:]
 \begin{itemize}
 \item studio dei documenti in input;
@@ -336,17 +377,20 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Documentazione interfaccia grafica}
+\paragraph{Test di unità}
 \begin{description}
-\item[Descrizione:] stesura formale della documentazione riguardante tutto il codice prodotto per la realizzazione del interfaccia grafica.
+\item[Descrizione:] fase di test di tutte le singole unità software prodotte.
 \item[Responsabile:] 
-\item[Input:] Specifica Tecnica, Definizione di Prodotto e codice software del interfaccia grafica.
-\item[Output:] documento con scopo documentale della codifica del software.
+\item[Input:] metodi pianificati nell'architettura di dettaglio del prodotto.
+\item[Output:] documento riassuntivo dei risultati ottenuti dai test.
 \item[Attività:]
 \begin{itemize}
-\item studio documenti in input e del codice prodotto;
-\item stesura documentazione per ogni singola unità;
-\item verifica documento ed eventuali correzioni;
+\item studio documento in input;
+\item esecuzione dei test;
+\item risoluzione eventuali errori rilevati;
+\item approvazione dei test;
+\item stesura documento riassuntivo;
+\item verifica documento;
 \item formalizzazione documento;
 \item approvazione;
 \end{itemize}
@@ -354,12 +398,12 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Test di unità}
+\paragraph{Test di integrazione}
 \begin{description}
-\item[Descrizione:] fase di test di tutte le singole unità software prodotte.
+\item[Descrizione:] fase di test delle singole funzionalità del prodotto, si tratta di una verifica in primis dei flussi di dati in entrata e in uscita tra le varie componenti realizzate e infine nella verifica dei flusso di controllo tra le componenti.
 \item[Responsabile:] 
-\item[Input:] interfaccia grafica e Piano di Qualifica.
-\item[Output:] documento riassuntivo dei risultati ottenuti dai test.
+\item[Input:] componenti pianificati nella specifica tecnica del prodotto (progettazione di alto livello).
+\item[Output:] documento riassuntivo dei risultati ottenuti dalla batteria di test realizzati.
 \item[Attività:]
 \begin{itemize}
 \item studio documento in input;
@@ -377,7 +421,7 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 
 \paragraph{Test di sistema}
 \begin{description}
-\item[Descrizione:] fase di test sulle interazioni fra le singole unità. Si verifica che i comportamenti in seguito alle comunicazioni fra di queste siano quelli previsti.
+\item[Descrizione:] fase di test sulle interazioni fra le singole unità. Si verifica che i comportamenti in seguito alle comunicazioni fra di queste siano quelli previsti. Queste fase ha lo scopo principale di effettuare un collaudo interno al fine di compiere eventuali correzioni onde evitare malfunzionamenti per il collaudo finale del prodotto.
 \item[Responsabile:] 
 \item[Input:] interfaccia grafica e Piano di Qualifica, documento riassuntivo test di unità.
 \item[Output:] documento riassuntivo dei risultati ottenuti dai test di integrazione.
@@ -396,7 +440,7 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
 
-\paragraph{Collaudo}
+\paragraph{Collaudo finale}
 \begin{description}
 \item[Descrizione:] fase di test dell'intero sistema da effettuare prima del rilascio. Si cercano eventuali errori o malfunzionamenti e successivamente si certifica che tutte le funzionalità dichiarate siano presenti.
 \item[Responsabile:] 
@@ -432,3 +476,21 @@ Per la descrizione dei Work Package di secondo livello verrà utilizzato il segu
 \item[Costo:] \euro{}.
 \item[Tempi di realizzazione:]  giorni lavorativi.
 \end{description}
+
+\paragraph{Assistenza e manutenzione}
+\begin{description}
+\item[Descrizione:] fase che segue il rilascio del software: in questa fase bisogna prevedere
+possibili bug del prodotto e problemi che si possono verificare con i clienti e che dovranno essere risolti.
+\item[Responsabile:] 
+\item[Input:] problema riguardante il software.
+\item[Output:] rilascio nuova versione, relazioni sui problemi incontrati e sulle soluzioni,
+\item[Attività:]
+\begin{itemize}
+\item il servizio clienti è in contatto con il cliente per rilevare la
+soddisfazione del prodotto tramite interviste e questionari per fornire assistenza;
+\item progettisti e programmatori lavorano per risolvere eventuali problemi individuati;
+\end{itemize}
+\item[Costo:] \euro{}.
+\item[Tempi di realizzazione:]  giorni lavorativi.
+\end{description}
+
